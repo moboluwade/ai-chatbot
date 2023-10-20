@@ -2,6 +2,16 @@
 # ai-chatbot
 An online space for collaboration and productivity on the ai-chatbot frontend development.
 
+## To Start
+- Clone the repository to your local computer.
+- Enter `npm i` into the terminal to install the necessary project dependencies.
+
+## Project Stack/Frameworks
+- TailwindCSS
+- Reactjs
+- MUI
+- Material-Tailwind
+
 ### Issues
 Issues will be created to keep track of which contributor is handling what.
 - _Go to the issues tab of the repository_ to browse through the available issues currently on the project.
@@ -21,3 +31,4 @@ For this project, our folder structure will mimic that of a large scale react pr
 - The 'index.js' the file is responsible for rendering the root component and mounting it to the DOM.
 - The 'package.json' file lists the dependencies for the project
 - The 'README.md' the file provides documentation for the project.
+
