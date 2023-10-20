@@ -4,8 +4,9 @@ An online space for collaboration and productivity on the ai-chatbot frontend de
 
 ### Issues
 Issues will be created to keep track of which contributor is handling what.
--Go to the issues tab of the repository to browse through the available issues currently on the project.
--Add any issues you consider relevant to the development of the ai-chatbot frontend.
+- _Go to the issues tab of the repository_ to browse through the available issues currently on the project.
+- _Indicate your interest in your chosen issue to get assigned_.
+- _Add any issues you consider relevant_ to the development of the ai-chatbot frontend.
 
 ### Folder structure
 For this project, our folder structure will mimic that of a large scale react projects, to enhance _scalability_, _maintainability_, and _ease of navigation_.
