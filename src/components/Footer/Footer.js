@@ -3,7 +3,7 @@ import ChatInput from "../../components/Chat/subs/ChatInput"
 
 const Footer = () => {
   return (
-    <footer className=' text-blueGrey-400 text-lg pt-1 text-center h-8 w-full bg-white fixed bottom-0'>
+    <footer className='w-full z-50 text-gray-600 bg-white sticky bottom-0'>
       <ChatInput />
     </footer>
   )
