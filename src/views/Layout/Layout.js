@@ -1,13 +1,13 @@
 import Footer from "../../components/Footer/Footer"
 import Header from "../../components/Header/Header"
 
-const Layout = ({children}) => {
+const Layout = ({ children }) => {
   return (
-    <>
-        <Header />
-        <main>{children}</main>
-        <Footer />
-    </>
+    <div className="md:px-48 max-h-screen">
+      <Header />
+      <main>{children}</main>
+      <Footer />
+    </div>
   )
 }
 
