@@ -11,6 +11,7 @@ const Layout = () => {
     
     const message = {
       id: chatTrain.length + 1,
+      role: 'user',
       timestamp: `${new Date().getHours()}:${new Date().getMinutes()}:${new Date().getSeconds()}`,
       description: chatInput,
     }
@@ -19,6 +20,7 @@ const Layout = () => {
     console.log(message)
     setChatTrain([...chatTrain, message])
     console.log(chatTrain)
+    //it seems local Storage does not recognize objects
     setTimeout(() => {
       console.log(`this is the chatTrain log: ${chatTrain}`)
     }, 5000);
