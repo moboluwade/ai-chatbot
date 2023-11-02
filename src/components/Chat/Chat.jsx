@@ -2,10 +2,10 @@ import React, { useEffect } from 'react'
 import AIChat from './subs/AIChat'
 import UserChat from './subs/UserChat'
 
-const Chat = ({chatTrain, setChatTrain}) => {
+const Chat = ({chatInput, chatTrain, setChatTrain}) => {
 
   useEffect(()=>{
-    if(chatTrain==[] && chatTrain !== null){
+    if(chatTrain.length === 0 && chatTrain !== null){
       setChatTrain(localStorage.getItem('chatTrain'))
     }
     //recover local storage when the page loads
