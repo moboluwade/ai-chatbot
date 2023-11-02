@@ -6,3 +6,16 @@ body{
   margin: 0;
   padding: 0;
 }
+
+#user-chat-input {
+  overflow: scroll;
+  overflow-x: hidden;
+}
+#user-chat-input::-webkit-scrollbar {
+  width: 0;  /* Remove scrollbar space */
+  background: transparent;  /* Optional: just make scrollbar invisible */
+}
+/* Optional: show position indicator in red */
+#user-chat-input::-webkit-scrollbar-thumb {
+  background: #FF0000;
+}
