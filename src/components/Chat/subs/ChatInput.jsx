@@ -2,8 +2,7 @@ import React, { useRef, useState } from 'react'
 import SendIcon from '@mui/icons-material/Send';
 import { AttachFile } from '@mui/icons-material';
 
-const ChatInput = () => {
-    const [chatInput, setChatInput] = useState('')
+const ChatInput = ({setChatInput}) => {
     const inputRef = useRef()
 
     return (
