@@ -2,7 +2,7 @@ import React, { useEffect } from 'react'
 import AIChat from './subs/AIChat'
 import UserChat from './subs/UserChat'
 
-const Chat = ({chatInput, chatTrain, setChatTrain}) => {
+const Chat = ({ chatTrain, setChatTrain }) => {
 
   useEffect(()=>{
     if(chatTrain.length === 0 && chatTrain !== null){

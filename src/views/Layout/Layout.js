@@ -1,4 +1,4 @@
-import { useState } from "react"
+import { useEffect, useState } from "react"
 import Footer from "../../components/Footer/Footer"
 import Header from "../../components/Header/Header"
 import Chat from "../../components/Chat/Chat"
@@ -6,25 +6,24 @@ import Chat from "../../components/Chat/Chat"
 const Layout = () => {
   const [chatInput, setChatInput] = useState('')
   const [chatTrain, setChatTrain] = useState([])
+  const [messageObject, setMessageObject] = useState(null)
+
+  useEffect(()=>{
+    setChatTrain(chatTrain=>[...chatTrain, messageObject])
+    //passes
+  }
+  ,[messageObject])
 
   const onSend = ()=>{
-    
-    const message = {
-      id: chatTrain.length + 1,
-      role: 'user',
-      timestamp: `${new Date().getHours()}:${new Date().getMinutes()}:${new Date().getSeconds()}`,
-      description: chatInput,
-    }
-    //create a new input obj; with id, timestamp and description
-    console.log(`this is the message log: ${message}`)
-    console.log(message)
-    setChatTrain([...chatTrain, message])
-    console.log(chatTrain)
-    //it seems local Storage does not recognize objects
-    setTimeout(() => {
-      console.log(`this is the chatTrain log: ${chatTrain}`)
-    }, 5000);
-    //push that object into the chatTrain
+    setMessageObject(
+      {
+        id: chatTrain.length + 1,
+        role: 'user',
+        timestamp: `${new Date().getHours()}:${new Date().getMinutes()}:${new Date().getSeconds()}`,
+        description: chatInput,
+      }
+    )
+    //passes
   }
   
   return (
@@ -32,8 +31,8 @@ const Layout = () => {
       <Header />
       {/* <main>{children}</main> */}
       {/* newer components should be built in the dedicted components folder and called in here*/}
-      <Chat chatInput={chatInput} chatTrain={chatTrain} setChatTrain={setChatTrain} />
-      <Footer setChatInput={setChatInput} onSend={onSend}/>
+      <Chat chatTrain={chatTrain} setChatTrain={setChatTrain} />
+      <Footer chatInput={chatInput} setChatInput={setChatInput} onSend={onSend}/>
     </div>
   )
 }
