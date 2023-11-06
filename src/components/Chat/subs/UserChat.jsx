@@ -9,7 +9,7 @@ const UserChat = () => {
         <div className=' shadow-sm flex flex-col items-center p-3 my-2 w-fit rounded-md text-gray-600 bg-white'>
           <span>Hello there!</span>
         </div>
-        <div className=' shadow-sm flex flex-col items-center p-3 my-2 w-fit max-w-[70%] rounded-md text-gray-600 bg-white'>
+        <div className=' shadow-sm flex flex-col items-center p-3 my-2 w-fit max-w-[60%] rounded-md text-gray-600 bg-white'>
           <span>Welcome to LiveChat <br />I was made with passion. Pick a topic from the list or type down a question!</span>
         </div>
         <ChatStatus />

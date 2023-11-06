@@ -27,7 +27,7 @@ const Layout = () => {
   }
   
   return (
-    <div className="md:px-48 max-h-screen">
+    <div className="md:px-48 max-h-screen h-screen">
       <Header />
       {/* <main>{children}</main> */}
       {/* newer components should be built in the dedicted components folder and called in here*/}
